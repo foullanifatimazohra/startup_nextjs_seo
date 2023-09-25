@@ -17,6 +17,7 @@ const config: Config = {
     },
     fontFamily: {
       outfit: ["Outfit", ...defaultTheme.fontFamily.sans],
+      serifibm: ["IBM Plex Serif", ...defaultTheme.fontFamily.serif],
     },
     colors: {
       green: "#22C96A",
