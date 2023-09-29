@@ -9,7 +9,7 @@ function Navbar() {
       <div className="flex justify-between">
         <Image src={Logo} alt="Logo " height={48} width={120} />
         <nav>
-          <ul className="flex items-center gap-5">
+          <ul className="flex items-center gap-5 cursor-pointer">
             <li>Who are we?</li>
             <li>Contact Us</li>
             <Button type="secondary" title="Request Access" />

@@ -5,12 +5,21 @@ interface CardProps {
   bgColor?: string;
   padding: string;
   children?: JSX.Element[];
+  extraClassName?: string;
 }
-function Card({ rounded, children, bgColor, padding }: CardProps) {
+function Card({
+  rounded,
+  children,
+  bgColor,
+  padding,
+  extraClassName,
+}: CardProps) {
   const className =
     `${bgColor ? bgColor : "bg-white"} ${
       rounded ? "rounded-lg" : ""
-    } flex flex-col gap-10  w-[60ch] ` + padding;
+    } flex flex-col gap-10  w-[60ch] ` +
+    padding +
+    extraClassName;
   return <div className={className}>{children}</div>;
 }
 
