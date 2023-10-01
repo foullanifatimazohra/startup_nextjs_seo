@@ -10,7 +10,7 @@ function AboutUs() {
   return (
     <div className="bg-[#000] py-40 px-60 px-auto mx-0">
       <div className="container flex items-stretch justify-center gap-8 ">
-        <Card rounded={true} padding="p-8 " extraClassName="w-3/4">
+        <Card rounded={true} padding="p-8 " extraClassName="w-auto">
           <Text
             type="h2"
             content="Supercharge your Outbound Sales"
