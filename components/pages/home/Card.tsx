@@ -4,7 +4,7 @@ interface CardProps {
   rounded?: boolean;
   bgColor?: string;
   padding: string;
-  children?: JSX.Element[];
+  children?: JSX.Element[] | JSX.Element;
   extraClassName?: string;
 }
 function Card({
