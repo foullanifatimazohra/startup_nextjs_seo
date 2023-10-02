@@ -5,7 +5,7 @@ import Button from "../ui/Button";
 
 function Navbar() {
   return (
-    <div className="h-10 py-5 container mx-auto">
+    <header className="h-10 py-5 container mx-auto">
       <div className="flex justify-between">
         <Image src={Logo} alt="Logo " height={48} width={120} />
         <nav>
@@ -16,7 +16,7 @@ function Navbar() {
           </ul>
         </nav>
       </div>
-    </div>
+    </header>
   );
 }
 
