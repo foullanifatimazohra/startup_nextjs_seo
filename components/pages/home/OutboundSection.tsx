@@ -6,28 +6,28 @@ import asset from "../../../public/svg/asset-svg.svg";
 
 function OutboundSection() {
   return (
-    <div className="container mx-auto my-28 text-center flex flex-col items-center gap-10 ">
+    <div className="container md:mx-auto px-5 my-28 text-center flex flex-col items-center gap-10 ">
       <Text type="h2" content="Outbound Sales, Without the Work" />
 
       <Text
         type="p"
-        className="w-[100ch] text-center"
+        className="md:w-[100ch] text-center"
         content="Our exceptional personalized outreach capabilities ensure that your communications resonate with your customers, helping you build meaningful relationships that drive revenue growth. "
       />
-      <div className="flex gap-10">
+      <div className="flex md:flex-row flex-col gap-10">
         <Card
           rounded={true}
-          padding="py-40 px-5"
+          padding="py-40  "
           bgColor="bg-[#E6FAE6]"
-          extraClassName="flex items-center"
+          extraClassName="flex items-center max-sm:w-auto"
         >
           <Image src={asset} alt="Project" />
         </Card>
         <Card
           rounded={true}
-          padding="py-40 px-5"
+          padding="py-40 "
           bgColor="bg-[#E6F8FA]"
-          extraClassName="flex items-center"
+          extraClassName="flex items-center max-sm:w-auto"
         >
           <Image src={asset} alt="Project" />
         </Card>

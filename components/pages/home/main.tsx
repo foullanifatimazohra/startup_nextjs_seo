@@ -6,16 +6,16 @@ import Image from "next/image";
 
 function Main() {
   return (
-    <div className="container mx-auto my-60 h-auto mt-40">
-      <div className="flex items-center text-center gap-8 flex-col">
+    <div className="container md:mx-auto md:my-60 my-20 h-auto md:mt-40">
+      <div className="flex items-center justify-center text-center gap-8 flex-col">
         <Text
           type="h1"
           content="Unparalleled personalized outreach and optimized customer engagement"
-          className="px-16"
+          className="md:px-16"
         />
         <Text
           type="p"
-          className="w-[60ch] text-center"
+          className="md:w-[60ch] text-center"
           content="Experience the power of Salient - the AI-powered sales platform that maximizes outbound volume and engagement, creates effortless sales and forges lasting connections with your customers."
         />
         <div>
