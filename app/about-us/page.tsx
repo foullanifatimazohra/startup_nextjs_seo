@@ -68,6 +68,13 @@ We do all of this without interrupting your team's current workflows, integratin
           className="text-white md:text-[56px] font-normal "
         />
       </div>
+      {/* TEAM SECTION */}
+      <div className="container  md:mx-auto p-5">
+        <div className="flex gap-5 flex-col my-10">
+          <div className="basis-1/2"></div>
+          <div className="basis-1/2"></div>
+        </div>
+      </div>
     </div>
   );
 }
