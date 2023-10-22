@@ -6,10 +6,10 @@ import image from "../../public/images/about-us-image.png";
 function page() {
   return (
     <div className=" mx-auto">
-      <div className="h-screen">
+      <div className="md:h-screen">
         {/* FIRST SECTION */}
-        <div className="container mx-auto flex h-full justify-between items-center">
-          <div className="w-1/2 flex flex-col gap-5">
+        <div className="container md:mx-auto p-5 flex md:flex-row flex-col md:h-full h-auto md:justify-between md:items-center">
+          <div className="md:w-1/2 w-auto flex flex-col  gap-5">
             <Text type="h3" content="ABOUT US" className="text-[20px] " />
             <Text type="h1" content=" Outbound sales On autopilot" />
             <Text
@@ -26,9 +26,9 @@ function page() {
         </div>
       </div>
       {/* SECOND SECTION */}
-      <div className="container  mx-auto">
+      <div className="container  md:mx-auto p-5">
         <div className="flex gap-5 flex-col my-10">
-          <div className="w-[60%]">
+          <div className="md:w-[60%]">
             <Text type="h2" content="What's the problem?" />
             <Text
               type="p"
