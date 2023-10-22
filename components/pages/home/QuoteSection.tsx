@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Text from "@/components/ui/Text";
-import manImage from "../../../public/images/man-working.jpg";
+import manImage from "../../../public/images/man-working-on-laptop.jpeg";
 
 function QuoteSection() {
   return (

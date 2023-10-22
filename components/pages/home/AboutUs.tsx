@@ -2,14 +2,14 @@ import React from "react";
 import Card from "./Card";
 import Text from "@/components/ui/Text";
 import Image from "next/image";
-import womenCoworker from "../../../public/images/working-on-computer.jpg";
-import coworkers from "../../../public/images/coworkers.png";
+import womenCoworker from "../../../public/images/women-coworker.jpeg";
+import coworkers from "../../../public/images/team.jpeg";
 import combinatorLogo from "../../../public/images/combinator.png";
 
 function AboutUs() {
   return (
     <div className="bg-[#000] py-40 mx-auto">
-      <div className="md:px-60">
+      <div className="md:px-60 px-5">
         <div className="flex items-stretch md:flex-row flex-col w-full justify-center gap-8 ">
           <Card rounded={true} padding="p-8 " extraClassName="w-auto">
             <Text
@@ -40,8 +40,8 @@ function AboutUs() {
           />
         </div>
         <div className=" flex md:flex-row flex-col gap-8 mt-8 items-stretch justify-center">
-          <div className="md:w-30 ">
-            <div className="flex gap-8 flex-col w-full">
+          <div className="md:w-30">
+            <div className="flex gap-8 flex-col md:w-1/3 w-full">
               <Card
                 rounded={true}
                 padding="p-10 max-sm:w-auto "
@@ -63,7 +63,11 @@ function AboutUs() {
             </div>
           </div>
 
-          <Image src={coworkers} alt="coworkers" className="md:w-1/3 w-full " />
+          <Image
+            src={coworkers}
+            alt="coworkers"
+            className="md:w-[230px] rounded-md w-full "
+          />
           <Card
             rounded={true}
             padding="p-4 "

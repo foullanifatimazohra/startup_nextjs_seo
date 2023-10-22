@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Text from "@/components/ui/Text";
-import image from "../../public/images/about-us-image.png";
+import image from "../../public/images/about-image.jpeg";
 
 function page() {
   return (
     <div className=" mx-auto">
       <div className="md:h-screen">
         {/* FIRST SECTION */}
-        <div className="container md:mx-auto p-5 flex md:flex-row flex-col md:h-full h-auto md:justify-between md:items-center">
+        <div className="container md:mx-auto p-5 flex md:flex-row flex-col max-sm:gap-5 md:h-full h-auto md:justify-between md:items-center">
           <div className="md:w-1/2 w-auto flex flex-col  gap-5">
             <Text type="h3" content="ABOUT US" className="text-[20px] " />
             <Text type="h1" content=" Outbound sales On autopilot" />
@@ -22,7 +22,13 @@ function page() {
               content="With Salient, you can personalize your outbound communications at scale, automate responses to customers, and proactively re-engage with prospects at the optimal time."
             />
           </div>
-          <Image src={image} alt="Image about us " height={410} width={400} />
+          <Image
+            src={image}
+            alt="Image about us"
+            height={320}
+            width={400}
+            className="h-[430px] w-[380px]"
+          />
         </div>
       </div>
       {/* SECOND SECTION */}
@@ -55,7 +61,13 @@ We do all of this without interrupting your team's current workflows, integratin
         </div>
       </div>
       {/* THIRD SECTION */}
-      <div className="h-[400px] w-screen background-gradient mt-20"></div>
+      <div className="h-[400px] w-screen background-gradient mt-20 flex items-center justify-center">
+        <Text
+          type="h2"
+          content="Meet the Team"
+          className="text-white md:text-[56px] font-normal "
+        />
+      </div>
     </div>
   );
 }

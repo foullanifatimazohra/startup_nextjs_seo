@@ -2,7 +2,7 @@ import React from "react";
 import Text from "@/components/ui/Text";
 import Card from "./Card";
 import Image from "next/image";
-import asset from "../../../public/svg/asset-svg.svg";
+import gif from "../../../public/gif/email.gif";
 
 function OutboundSection() {
   return (
@@ -21,7 +21,7 @@ function OutboundSection() {
           bgColor="bg-[#E6FAE6]"
           extraClassName="flex items-center max-sm:w-auto"
         >
-          <Image src={asset} alt="Project" />
+          <Image src={gif} alt="Project" />
         </Card>
         <Card
           rounded={true}
@@ -29,7 +29,7 @@ function OutboundSection() {
           bgColor="bg-[#E6F8FA]"
           extraClassName="flex items-center max-sm:w-auto"
         >
-          <Image src={asset} alt="Project" />
+          <Image src={gif} alt="Project" />
         </Card>
       </div>
     </div>
