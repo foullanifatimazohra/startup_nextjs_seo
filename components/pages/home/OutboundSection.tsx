@@ -21,7 +21,7 @@ function OutboundSection() {
           bgColor="bg-[#E6FAE6]"
           extraClassName="flex items-center max-sm:w-auto"
         >
-          <Image src={gif} alt="Project" />
+          <Image src={gif} alt="Project" unoptimized={true} />
         </Card>
         <Card
           rounded={true}
@@ -29,7 +29,7 @@ function OutboundSection() {
           bgColor="bg-[#E6F8FA]"
           extraClassName="flex items-center max-sm:w-auto"
         >
-          <Image src={gif} alt="Project" />
+          <Image src={gif} alt="Project" unoptimized={true} />
         </Card>
       </div>
     </div>

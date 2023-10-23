@@ -64,7 +64,9 @@ function Navbar() {
             <li>
               <Link href="/about-us">Who are we?</Link>
             </li>
-            <li>Contact Us</li>
+            <li>
+              <Link href="/contact">Contact Us</Link>
+            </li>
             <Button type="secondary" title="Request Access" />
           </ul>
         </div>
