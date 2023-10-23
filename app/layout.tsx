@@ -1,7 +1,9 @@
+"use client";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { usePathname } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,6 +12,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
   return (
     <html lang="en">
       <head>
@@ -20,9 +23,9 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
-        <Navbar />
+        {pathname.includes("contact") ? null : <Navbar />}
         {children}
-        <Footer />
+        {pathname.includes("contact") ? null : <Footer />}
       </body>
     </html>
   );

@@ -60,14 +60,16 @@ function Navbar() {
             openMenu ? "" : "hidden"
           } justify-between items-center w-full lg:flex lg:w-auto lg:order-1`}
         >
-          <ul className="flex flex-col items-center gap-4 mt-4 lg:flex-row lg:space-x-8 lg:mt-0 cursor-pointer">
+          <ul className="flex flex-col items-center gap-2 mt-4 lg:flex-row lg:space-x-8 lg:mt-0 cursor-pointer">
             <li>
               <Link href="/about-us">Who are we?</Link>
             </li>
             <li>
               <Link href="/contact">Contact Us</Link>
             </li>
-            <Button type="secondary" title="Request Access" />
+            <Link href="/contact">
+              <Button type="secondary" title="Request Access" />
+            </Link>
           </ul>
         </div>
       </nav>

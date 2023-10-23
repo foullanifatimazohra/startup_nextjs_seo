@@ -8,6 +8,7 @@ import Text from "@/components/ui/Text";
 import { TextField } from "@/components/ui/TextField";
 import Button from "@/components/ui/Button";
 import exit from "@/public/svg/x.svg";
+import Link from "next/link";
 
 export const metadata: Metadata = metaData.contact;
 
@@ -15,19 +16,22 @@ function page() {
   return (
     <div className="md:h-full relative flex md:flex-row flex-col max-sm:gap-5 max-sm:mt-10">
       <div className="container md:mx-auto px-10  h-full flex flex-col justify-center ">
-        <Image
-          src={exit}
-          alt="exit icon"
-          height={24}
-          width={24}
-          className="cursor-pointer my-10"
-        />
+        <Link href="/">
+          <Image
+            src={exit}
+            alt="exit icon"
+            height={24}
+            width={24}
+            className="cursor-pointer my-10"
+          />
+        </Link>
+
         <div className="md:pl-5">
           <Text content="Interested in trying Salient?" type="h1" />
           <p className="mt-3 ml-1">
             We are excited for you to join our platform
           </p>
-          <form className="flex flex-col gap-8 mt-8">
+          <form className="flex flex-col gap-8 my-8">
             <TextField name="name" label="Name" type="text" />
             <TextField name="email" label="Work Email" type="email" />
             <TextField
