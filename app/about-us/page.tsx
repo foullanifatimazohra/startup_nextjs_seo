@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Text from "@/components/ui/Text";
 import image from "../../public/images/about-image.jpeg";
+import Ceo from "../../public/images/ceo.jpeg";
+import Cto from "../../public/images/cto.jpeg";
 
 function page() {
   return (
@@ -70,9 +72,56 @@ We do all of this without interrupting your team's current workflows, integratin
       </div>
       {/* TEAM SECTION */}
       <div className="container  md:mx-auto p-5">
-        <div className="flex gap-5 flex-col my-10">
-          <div className="basis-1/2"></div>
-          <div className="basis-1/2"></div>
+        <div className="flex gap-5 md:flex-row flex-col my-10">
+          <div className="basis-1/2 flex md:flex-row flex-col gap-5">
+            <div className="basis-1/2 relative">
+              <Image
+                src={Ceo}
+                alt="CEO of salient"
+                width={200}
+                height={200}
+                className="relative z-10"
+              />
+              <div className="w-[200px] h-[200px] bg-green absolute top-4 left-4"></div>
+              <p className="mt-8 text-sm">CEO</p>
+              <h5 className="text-xl">Ari</h5>
+            </div>
+            <div className="basis-1/2 relative">
+              <Image
+                src={Cto}
+                alt="CTO of salient"
+                width={200}
+                height={200}
+                className="relative z-10"
+              />
+              <div className="w-[200px] h-[200px] bg-green absolute top-4 left-4"></div>
+              <p className="mt-8 text-sm">CTO</p>
+              <h5 className="text-xl">Mukund</h5>
+            </div>
+          </div>
+          <div className="basis-1/2 flex flex-col md:gap-[56px] gap-5">
+            <div>
+              <h3 className="text-[24px] font-normal mb-[32px]">
+                🎯 Ari (CEO):
+              </h3>
+              <p className="font-[300]">
+                Sales Finance @Tesla, previously @Goldman Sachs @DST Global.
+                Computer Science + Philosophy @Columbia. Chat with me about
+                Manchester United, the intersection of technology and
+                government, and Ben Taub.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-[24px] font-normal mb-[32px]">
+                🚀 Mukund (CTO):
+              </h3>
+              <p className="font-[300]">
+                Growth Engineering @Airtable @Dropbox. Computer Science +
+                Robotics @Carnegie Mellon. Chat with me about alpine climbing,
+                solo backpacking, and rock music 🎸
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
