@@ -4,6 +4,10 @@ import Text from "@/components/ui/Text";
 import image from "../../public/images/about-image.jpeg";
 import Ceo from "../../public/images/ceo.jpeg";
 import Cto from "../../public/images/cto.jpeg";
+import { Metadata } from "next";
+import metaData from "@/utils/MetaData";
+
+export const metadata: Metadata = metaData.about;
 
 function page() {
   return (
@@ -84,7 +88,7 @@ We do all of this without interrupting your team's current workflows, integratin
               />
               <div className="w-[200px] h-[200px] bg-green absolute top-4 left-4"></div>
               <p className="mt-8 text-sm">CEO</p>
-              <h5 className="text-xl">Ari</h5>
+              <h2 className="text-xl">Ari</h2>
             </div>
             <div className="basis-1/2 relative">
               <Image
@@ -96,7 +100,7 @@ We do all of this without interrupting your team's current workflows, integratin
               />
               <div className="w-[200px] h-[200px] bg-green absolute top-4 left-4"></div>
               <p className="mt-8 text-sm">CTO</p>
-              <h5 className="text-xl">Mukund</h5>
+              <h2 className="text-xl">Mukund</h2>
             </div>
           </div>
           <div className="basis-1/2 flex flex-col md:gap-[56px] gap-5">

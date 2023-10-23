@@ -34,3 +34,5 @@ const metaData: PageMetadata = {
     ],
   },
 };
+
+export default metaData;
