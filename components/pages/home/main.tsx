@@ -24,7 +24,7 @@ function Main() {
         <Image
           src={mainPicture}
           alt="main picture "
-          width={1080}
+          width={1000}
           height={530}
         />
       </div>

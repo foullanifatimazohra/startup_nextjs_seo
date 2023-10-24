@@ -37,6 +37,8 @@ function AboutUs() {
             src={womenCoworker}
             alt="women coworker"
             className="md:w-1/4 w-full rounded-lg h-[380px]"
+            height={380}
+            width={340}
           />
         </div>
         <div className=" flex md:flex-row flex-col gap-8 mt-8 items-stretch justify-center">
@@ -50,7 +52,7 @@ function AboutUs() {
                 <Text
                   type="h3"
                   content="3x Outbound Sales"
-                  className=" text-center text-white "
+                  className=" text-center text-gray_100 "
                 />
               </Card>
               <Card rounded={true} padding="p-10 max-sm:w-auto ">
@@ -67,6 +69,8 @@ function AboutUs() {
             src={coworkers}
             alt="coworkers"
             className="md:w-[230px] rounded-md w-full "
+            height={360}
+            width={230}
           />
           <Card
             rounded={true}
@@ -74,7 +78,12 @@ function AboutUs() {
             extraClassName="md:w-1/3 w-full flex items-center justify-center"
             bgColor="bg-[#E6F8FA]"
           >
-            <Image src={combinatorLogo} alt="combinator logo" />
+            <Image
+              src={combinatorLogo}
+              alt="combinator logo"
+              height={100}
+              width={280}
+            />
           </Card>
         </div>
       </div>
