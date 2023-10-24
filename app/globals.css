@@ -12,10 +12,9 @@ body {
 }
 .background-gradient {
   background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0.2) 100%
-    ),
-    url("../public/gif/team.gif"), lightgray 50% / cover no-repeat;
+    0deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
   background-position: center;
 }

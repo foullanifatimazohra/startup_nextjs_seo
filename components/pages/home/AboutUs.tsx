@@ -11,13 +11,13 @@ function AboutUs() {
     <div className="bg-[#000] py-40 mx-auto">
       <div className="md:px-60 px-5">
         <div className="flex items-stretch md:flex-row flex-col w-full justify-center gap-8 ">
-          <Card rounded={true} padding="p-8 " extraClassName="w-auto">
+          <Card rounded={true} padding="p-8 " extraClassName="w-auto ">
             <Text
               type="h2"
               content="Supercharge your Outbound Sales"
-              className="mr-60"
+              className="mr-40"
             />
-            <div className="mr-20">
+            <div className="mr-10">
               <Text
                 type="p"
                 content="Unleash personalized outreach that forges meaningful connections and creates effortless leads."
@@ -36,9 +36,13 @@ function AboutUs() {
           <Image
             src={womenCoworker}
             alt="women coworker"
-            className="md:w-1/4 w-full rounded-lg h-[380px]"
-            height={380}
-            width={340}
+            className="md:w-auto w-full rounded-lg h-[380px]"
+            sizes="100vw"
+            // Make the image display full width
+            style={{
+              width: "340px",
+              height: "500px",
+            }}
           />
         </div>
         <div className=" flex md:flex-row flex-col gap-8 mt-8 items-stretch justify-center">

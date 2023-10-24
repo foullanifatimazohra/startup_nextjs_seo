@@ -4,6 +4,7 @@ import Text from "@/components/ui/Text";
 import image from "../../public/images/about-image.jpeg";
 import Ceo from "../../public/images/ceo.jpeg";
 import Cto from "../../public/images/cto.jpeg";
+import teamgif from "../../public/gif/team.gif";
 import { Metadata } from "next";
 import metaData from "@/utils/MetaData";
 
@@ -31,9 +32,12 @@ function page() {
           <Image
             src={image}
             alt="Image about us"
-            height={320}
-            width={400}
-            className="h-[430px] w-[380px]"
+            sizes="100vw"
+            // Make the image display full width
+            style={{
+              width: "340px",
+              height: "430px",
+            }}
           />
         </div>
       </div>
@@ -67,7 +71,14 @@ We do all of this without interrupting your team's current workflows, integratin
         </div>
       </div>
       {/* THIRD SECTION */}
-      <div className="h-[400px] w-screen background-gradient mt-20 flex items-center justify-center">
+      <div className="h-[400px]  w-screen background-gradient my-20 flex items-center justify-center relative">
+        <Image
+          src={teamgif}
+          alt="team gif"
+          className="absolute top-0 right-0 z-[-10] object-cover object-center w-screen"
+          layout="fill"
+          unoptimized={true}
+        />
         <Text
           type="h2"
           content="Meet the Team"
