@@ -9,7 +9,7 @@ function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <header className=" bg-white border-gray-200 dark:bg-gray-900">
+    <header className=" bg-white border-gray-200 dark:bg-gray-900 lg:mx-auto mx-5">
       <nav className="max-w-screen-xl flex flex-wrap items-center justify-between py-4  gap-5 md:container md:mx-auto mx-5">
         <Link href="/">
           <Image
@@ -20,7 +20,7 @@ function Navbar() {
             className="cursor-pointer"
           />
         </Link>
-        <div className="flex md:hidden items-center lg:order-2">
+        <div className="flex lg:hidden items-center lg:order-2">
           <button
             type="button"
             className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"

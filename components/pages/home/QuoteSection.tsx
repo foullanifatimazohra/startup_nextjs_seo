@@ -5,8 +5,8 @@ import manImage from "../../../public/images/man-working-on-laptop.jpeg";
 
 function QuoteSection() {
   return (
-    <div className="bg-[#232323] flex md:flex-row flex-col md:h-1/2">
-      <div className="flex flex-col md:w-1/2 max-sm:p-10 gap-20 items-center justify-center ">
+    <div className="bg-[#232323] flex lg:flex-row flex-col lg:h-1/2">
+      <div className="flex flex-col lg:w-1/2 max-lg:p-10 gap-20 items-center justify-center ">
         <Text
           type="h3"
           className="text-center text-white md:w-[28ch] w-auto text-[30px] font-[400]"
@@ -17,7 +17,7 @@ function QuoteSection() {
       <Image
         src={manImage}
         alt="man working on his computer"
-        className="md:w-1/2"
+        className="lg:w-1/2"
       />
     </div>
   );

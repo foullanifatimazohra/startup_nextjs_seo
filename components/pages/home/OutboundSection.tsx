@@ -11,10 +11,10 @@ function OutboundSection() {
 
       <Text
         type="p"
-        className="md:w-[100ch] text-center"
+        className="lg:w-[100ch] text-center"
         content="Our exceptional personalized outreach capabilities ensure that your communications resonate with your customers, helping you build meaningful relationships that drive revenue growth. "
       />
-      <div className="flex md:flex-row flex-col gap-10">
+      <div className="flex lg:flex-row flex-col gap-10">
         <Card
           rounded={true}
           padding="py-40  "
