@@ -9,7 +9,7 @@ function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <header className=" bg-white border-gray-200 dark:bg-gray-900 lg:mx-auto mx-5">
+    <header className=" bg-white border-gray-200 dark:bg-gray-900 lg:mx-auto max-lg:mx-5">
       <nav className="max-w-screen-xl flex flex-wrap items-center justify-between py-4  gap-5 md:container md:mx-auto mx-5">
         <Link href="/">
           <Image
